@@ -15,4 +15,5 @@
 .about {
   background: url("./Images/bg.png");
   pointer-events: none;
+  cursor: url("./Images/cursor.png") 16 16, auto;
 }

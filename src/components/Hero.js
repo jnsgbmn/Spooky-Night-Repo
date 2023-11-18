@@ -41,7 +41,11 @@ const Hero = () => {
     };
   }, []);
   return (
-    <div className="about h-screen  items-center justify-center">
+    <div
+      className={`about h-screen items-center justify-center ${
+        isFixed && "custom-cursor"
+      }`}
+    >
       <div className="about flex h-screen items-center justify-center relative">
         <div className="gap-[360px] flex items-center relative">
           <motion.div
@@ -136,7 +140,10 @@ const Hero = () => {
               <div class="grid grid-cols-1 mt lg:gap-24">
                 <div class="relative items-center m-auto lg:inline-flex md:order-first">
                   <section>
-                    <h1 class="text-center  lg:text-[30px] mt-[40vh] mb-[10vh]  relative font-h1 text-[30px] text-white ">
+                    <h1
+                      tyle={{ zIndex: 1 }}
+                      class="text-center  lg:text-[30px] mt-[40vh] mb-[10vh]  relative font-h1 text-[30px] text-white "
+                    >
                       We were headed for Bantayan Island and only needed to
                       spend one night in Cebu. I remembered a friend talking
                       about their haunted ancestral home in the outskirts of the
@@ -216,9 +223,6 @@ const Hero = () => {
                 <div class="relative items-center m-auto lg:inline-flex md:order-first">
                   <section>
                     <h1 class=" mt-[35vh] text-center  relative font-h1 text-[30px] text-white">
-                      THE END.
-                    </h1>
-                    <h1 class=" text-center  relative font-h1 text-[30px] text-white">
                       BY.
                     </h1>
                     <h1 class=" text-center  relative font-h1 text-[30px] text-white">
@@ -247,7 +251,8 @@ const Hero = () => {
       >
         <div>
           <img
-            className=" h-[1500px] w-[2550px]"
+            tyle={{ zIndex: 2 }}
+            className=" relative  h-[1500px] w-[2550px]"
             src={require("../Images/isle.png")}
             alt="/"
           />
