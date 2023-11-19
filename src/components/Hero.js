@@ -81,7 +81,7 @@ const Hero = () => {
       <Spline
         style={{ zIndex: 3 }}
         scene="https://prod.spline.design/NDI45SsVciyWhKOe/scene.splinecode"
-        className="  mt-[-1800px] relative  my-auto mx-auto items-center"
+        className="  mt-[-1800px] fixed  my-auto mx-auto items-center"
       />
       <Spline
         style={{ zIndex: 3 }}
@@ -133,7 +133,7 @@ const Hero = () => {
       >
         {isPlaying ? "Pause" : "Play..."}
       </button>
-      <div class="h-[3700px]   about w-full py-10">
+      <div class="h-[3100px]   about w-full py-10">
         <div class="h-full   relative w-full py-10">
           <div class=" relative w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
             <div class="relative flex-col items-left m-auto">
@@ -217,31 +217,28 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div class="relative w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
-            <div class="relative flex-col items-left m-auto">
-              <div class="grid grid-cols-1 mt lg:gap-24">
-                <div class="relative items-center m-auto lg:inline-flex md:order-first">
-                  <section>
-                    <h1 class=" mt-[35vh] text-center  relative font-h1 text-[30px] text-white">
-                      BY.
-                    </h1>
-                    <h1 class=" text-center  relative font-h1 text-[30px] text-white">
-                      Joan Gumban
-                    </h1>
-                    <h1 class=" text-center  relative font-h1 text-[30px] text-white">
-                      GDC Member
-                    </h1>
-                    <h1 class=" text-center  relative font-h1 text-[30px] text-white">
-                      Mapua Malayan Mindanao
-                    </h1>
-                    <h1 class=" text-center  relative font-h1 text-[30px] text-white">
-                      BS Com-Science
-                    </h1>
-                  </section>
+
+          <footer
+            class="w-full mt-[30vh] bg-black"
+            aria-labelledby="footer-heading"
+          >
+            <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-16">
+              <div class="flex flex-col items-baseline space-y-6">
+                <div class="mx-auto">
+                  <span class="mx-auto mt-2 text-sm text-gray-500">
+                    Copyright © 2022 - 2023
+                    <a
+                      href="https://jnsgumban-portfolio-74c76.web.app/"
+                      class="mx-2 text-purple-600 500 hover:text-gray-500 pointer-events-auto"
+                      rel="noopener noreferrer"
+                    >
+                      @jsgbn
+                    </a>
+                  </span>
                 </div>
               </div>
             </div>
-          </div>
+          </footer>
         </div>
       </div>
       <div
