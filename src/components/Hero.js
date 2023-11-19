@@ -80,8 +80,8 @@ const Hero = () => {
       </div>
       <Spline
         style={{ zIndex: 3 }}
-        scene="https://prod.spline.design/NDI45SsVciyWhKOe/scene.splinecode"
-        className=" mt-[-1800px] relative my-auto mx-auto items-center"
+        scene="https://prod.spline.design/O0i1UUZlm1y-TWXh/scene.splinecode"
+        className=" mt-[-1800px] fixed my-auto mx-auto items-center"
       />
       <Spline
         style={{ zIndex: 3 }}
