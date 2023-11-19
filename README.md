@@ -1,4 +1,4 @@
-# Site : (https://spooky-night-repo.vercel.app/)
+# Site : https://spooky-night-repo.vercel.app/
 
 # Getting Started with Create React App
 
