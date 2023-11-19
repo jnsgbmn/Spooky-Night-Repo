@@ -81,7 +81,7 @@ const Hero = () => {
       <Spline
         style={{ zIndex: 3 }}
         scene="https://prod.spline.design/NDI45SsVciyWhKOe/scene.splinecode"
-        className="  mt-[-1800px] fixed  my-auto mx-auto items-center"
+        className=" mt-[-1800px] relative my-auto mx-auto items-center"
       />
       <Spline
         style={{ zIndex: 3 }}
@@ -122,17 +122,21 @@ const Hero = () => {
           className="items-center mx-auto my-auto  justify-center ] mt-[-150px] ml-[-10px] w-[1600px] h-[1600px]"
         />
       </motion.div>
+      <div style={{ zIndex: 4 }}>
+        <h1
+          style={{ zIndex: 4 }}
+          className=" font-h1 mb-[10vh] absolute bottom-0 text-2xl w-[700px] left-0 right-0 mx-auto  text-white"
+        >
+          (click before you read the short story)
+        </h1>
 
-      <h1 className=" font-h1 mb-[10vh] absolute bottom-0 text-2xl w-[700px] left-0 right-0 mx-auto  text-white">
-        (click before you read the short story)
-      </h1>
-
-      <button
-        onClick={handlePlayPause}
-        className="absolute pointer-events-auto   bottom-0 w-[100px] left-0 right-[120px] mx-auto mb-[7vh] font-p text-4xl text-white "
-      >
-        {isPlaying ? "Pause" : "Play..."}
-      </button>
+        <button
+          onClick={handlePlayPause}
+          className="absolute pointer-events-auto   bottom-0 w-[100px] left-0 right-[120px] mx-auto mb-[7vh] font-p text-4xl text-white "
+        >
+          {isPlaying ? "Pause" : "Play..."}
+        </button>
+      </div>
       <div class="h-[3100px]   about w-full py-10">
         <div class="h-full   relative w-full py-10">
           <div class=" relative w-full px-5 mx-auto md:px-12 lg:px-16 max-w-7xl">
@@ -140,10 +144,7 @@ const Hero = () => {
               <div class="grid grid-cols-1 mt lg:gap-24">
                 <div class="relative items-center m-auto lg:inline-flex md:order-first">
                   <section>
-                    <h1
-                      tyle={{ zIndex: 1 }}
-                      class="text-center  lg:text-[30px] mt-[40vh] mb-[10vh]  relative font-h1 text-[30px] text-white "
-                    >
+                    <h1 class="text-center  lg:text-[30px] mt-[40vh] mb-[10vh]  relative font-h1 text-[30px] text-white ">
                       We were headed for Bantayan Island and only needed to
                       spend one night in Cebu. I remembered a friend talking
                       about their haunted ancestral home in the outskirts of the
@@ -248,7 +249,7 @@ const Hero = () => {
       >
         <div>
           <img
-            tyle={{ zIndex: 2 }}
+            style={{ zIndex: 4 }}
             className=" relative  h-[1500px] w-[2550px]"
             src={require("../Images/isle.png")}
             alt="/"
